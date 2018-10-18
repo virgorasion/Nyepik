@@ -29,7 +29,7 @@ public class AdapterMain extends RecyclerView.Adapter<AdapterMain.HolderMain> {
     @NonNull
     @Override
     public HolderMain onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_items, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_items, parent, false);
         return new HolderMain(view);
     }
 
@@ -52,7 +52,7 @@ public class AdapterMain extends RecyclerView.Adapter<AdapterMain.HolderMain> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mItems.size();
     }
 
     public class HolderMain extends RecyclerView.ViewHolder {
