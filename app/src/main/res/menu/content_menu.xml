@@ -16,18 +16,13 @@
             android:title="Study"/>
         <item
             android:id="@+id/setting"
-            android:checkable="false"
-            android:enabled="false"
             android:orderInCategory="200"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings"/>
         <item
             android:id="@+id/logout"
-            android:checkable="false"
-            android:enabled="false"
             android:orderInCategory="200"
-            android:title="Log Out"
-            app:showAsAction="never"/>
+            android:title="Log Out"/>
 
     </group>
 

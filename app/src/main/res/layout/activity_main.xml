@@ -23,29 +23,6 @@
         app:headerLayout="@layout/header_nav_layout"
         app:menu="@menu/content_menu" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:clickable="true"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/setting_ex"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="Setting"/>
-
-            <TextView
-                android:id="@+id/_ex"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="Logout"/>
-        </LinearLayout>
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

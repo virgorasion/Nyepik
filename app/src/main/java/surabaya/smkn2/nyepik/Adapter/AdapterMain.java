@@ -1,5 +1,6 @@
 package surabaya.smkn2.nyepik.Adapter;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
 import surabaya.smkn2.nyepik.Model.ContentModel;
+import surabaya.smkn2.nyepik.PlaylistActivity;
 import surabaya.smkn2.nyepik.R;
 
 public class AdapterMain extends RecyclerView.Adapter<AdapterMain.HolderMain> {
@@ -44,7 +46,8 @@ public class AdapterMain extends RecyclerView.Adapter<AdapterMain.HolderMain> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(holder.cardView.getContext(), "Ini Buat Pindah Halaman", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(holder.itemView.getContext(), PlaylistActivity.class);
+                holder.cardView.getContext().startActivity(i);
             }
         });
 
